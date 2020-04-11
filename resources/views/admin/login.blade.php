@@ -10,7 +10,7 @@
 
 @section('content')
 <div class="row">
-    <div class="col">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3">
         <form action="" method="post">
             <div class="form-group">
                 <label for="exampleInputEmail1">User</label>

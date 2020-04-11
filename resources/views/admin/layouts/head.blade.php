@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title','Laravel')</title>
-        @import '~bootstrap/scss/bootstrap';
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
     <body>
         @section('header')

@@ -13,7 +13,7 @@
     <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
         <form action="" method="post">
             <div class="form-group">
-                <label for="exampleInputEmail1">User</label>
+                <label for="exampleInputEmail1">User1</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>

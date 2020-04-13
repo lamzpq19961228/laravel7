@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', 'AdminController@index');
+$admin_uid = Auth::id();
+if ($admin_uid) {
+    Route::get('/admin', 'AdminController@index');
+}else{
+    Route::get('/admin', 'AdminController@login');
+}
+
 
 Route::post('/webhooks', 'WebhooksController@Webhooks');

@@ -20,6 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', 'AdminController@login');
+Route::get('/admin', 'AdminController@index');
 
-
+Route::post('/webhooks', 'WebhooksController@Webhooks');
